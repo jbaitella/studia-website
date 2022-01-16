@@ -23,6 +23,11 @@ const setClassToBody = () => {
         BODY.classList.remove('dark');
 
     }
+
 };
+
+
+
 BUTTON.addEventListener('click', switchMode);
 setClassToBody();
+ 
