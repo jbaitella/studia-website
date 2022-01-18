@@ -6,8 +6,7 @@
         --titelColor: white;
         --bannerColor: rgba(189, 33, 33, 0.685);
         --linkColor: #4c6591;
-        --navColor: rgb(134, 4, 4);
-        
+        --navColor: rgb(134, 4, 4);    
     }
     .dark{
         --primeColor: rgba(0, 0, 0, 0.719);
@@ -17,44 +16,14 @@
         --titelColor:white;
         --bannerColor:rgba(0, 0, 0, 0.719);
         --linkColor: rgba(255, 0, 0, 0.692); 
-        --navColor: rgb(54, 2, 2);
-        
+        --navColor: rgb(54, 2, 2);  
     }
+
+
 body{
     background-color: var(--primeColor);
     font-family: comic sans MS; 
     color: var(--textColor);
-    
-}
-.modebtn {
-    float: right;
-    background-color: var(--primeColor);
-    color: var(--textColor);
-    margin-top: 1em;
-    margin-left: 5%;
-    width: 10%;
-    font-size: 80%;
-    position: absolute;
-}
-.top-right{
-    position: absolute;
-    top: 100px;
-    background-color:var(--bannerColor);
-    font-size: 150%;
-    width: 100%;
-    min-height: 100px;
-    max-height: 200px;
-    color: var(--titelColor); 
-}
-
-
-.title{
-    font-family: comic sans MS;
-    width: 80%;
-    margin-top: 20px;
-    position: center;
-    margin-left: 15%;
-
 }
 
 .header {
@@ -68,7 +37,6 @@ body{
     z-index: 20;
     height: fit-content;
 }
-
 .nav{
     font-size: 100%; 
     width: fit-content;
@@ -77,38 +45,70 @@ body{
     float: left;
     text-align: right;
     break-after: none;
-
 }
 .logo{
     width: 15%;
     min-width: 60px;
     left: 0em;
-    top: 2%;
-    max-width: 80Px;
+    top: 1%;
+    max-width: 80px;
     position: fixed; 
     margin-right: 20px;  
 }
-
-.mapouter{
-    text-align:center;
+.hbox{
+    margin-left: 80px;
+}
+.modebtn {
+    float: right;
+    background-color: var(--primeColor);
+    color: var(--textColor);
+    margin-top: 1em;
+    margin-left: 25%;
+    width: 10%;
+    font-size: 80%;
     position: absolute;
-    box-shadow: inset; 
 }
 
-.gmap_canvas {
-    overflow:hidden;
-    background: none;
-}   
+
+.top-right{
+    position: absolute;
+    top: 100px;
+    background-color:var(--bannerColor);
+    font-size: 150%;
+    width: 100%;
+    min-height: 100px;
+    max-height: 200px;
+    color: var(--titelColor); 
+}
+.title{
+    font-family: comic sans MS;
+    width: 80%;
+    margin-top: 20px;
+    position: center;
+    margin-left: 15%;
+}
+
+
+.welcome{
+    text-align: center;
+    font-size:larger;
+    margin: 50px;
+}
+
 
 .inhaltsbox{
     position: static;
     margin: 2%;
     width: 96%;
 }
-
+.unititel{
+    font-size: 40;
+    color:var(--textColor);
+    margin-left: 3%; 
+}
 .box{
     width: 29%;
-    min-width: 300px;
+    min-width: 280px;
     height: fit-content; 
     color: var(--textColor);
     border:20px ;
@@ -145,36 +145,34 @@ body{
     font-size: medium;
 }
 
-.unititel{
-    font-size: 40;
-    color:var(--textColor);
-    margin-left: 3%; 
-}
-.hbox{
-    margin-left: 80px;
-}
-.welcome{
-    text-align: center;
-    font-size:larger;
-    margin: 50px;
-}
 hr{
     margin-left: 10%;
     margin: 70px;
     width:85%;
     color: var(--textColor)
 }
+
 .boximg{
     width: 100%;
     max-height: 200px;
 }
+.mapouter{
+    text-align:center;
+    position: absolute;
+    box-shadow: inset; 
+}
+.gmap_canvas {
+    overflow:hidden;
+    background: none;
+}   
+
 
 .footer {
     text-align: center;
     background-color: rgb(26, 20, 18);
     color: var(--titelColor);
     position: absolute;
-    bottom: -3600px;
+    padding-bottom: -3600px;
     width: 100%;
     left: 0px;
     height: 400px;

@@ -26,8 +26,6 @@ const setClassToBody = () => {
 
 };
 
-
-
 BUTTON.addEventListener('click', switchMode);
 setClassToBody();
  
